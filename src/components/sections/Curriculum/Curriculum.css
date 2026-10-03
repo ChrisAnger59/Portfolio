@@ -1,0 +1,66 @@
+#curriculum {
+  display: grid;
+  gap: var(--space-xl);
+  padding-block: var(--space-xl);
+}
+
+.curriculum-presentation {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--space-md);
+}
+
+/* Étiquette "Disponible en…" */
+.curriculum-presentation > p:first-child {
+  padding: 0.2rem 0.75rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--color-accent);
+  background: var(--color-accent-soft);
+  border-radius: var(--radius-full);
+}
+
+/* Lien de téléchargement du CV : bouton principal */
+.curriculum-presentation a {
+  padding: 0.6rem 1.25rem;
+  font-weight: 600;
+  color: var(--color-on-accent);
+  background: var(--color-accent);
+  border-radius: var(--radius-full);
+  text-decoration: none;
+}
+
+.curriculum-presentation a:hover {
+  color: var(--color-on-accent);
+  background: var(--color-accent-hover);
+}
+
+.curriculum-details {
+  display: grid;
+  gap: var(--space-md);
+  padding: var(--space-lg);
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow);
+}
+
+.curriculum-details h3 {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--color-text);
+}
+
+.curriculum-details p {
+  color: var(--color-text-strong);
+  font-weight: 500;
+}
+
+@media (min-width: 48em) {
+  #curriculum {
+    grid-template-columns: 3fr 2fr;
+    align-items: center;
+  }
+}

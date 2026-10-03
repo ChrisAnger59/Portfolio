@@ -1,0 +1,10 @@
+main {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2xl);
+}
+
+/* Évite que les ancres passent sous l'en-tête collant */
+section {
+  scroll-margin-top: 6rem;
+}

@@ -1,0 +1,28 @@
+#skills {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-lg);
+}
+
+.skills-cards {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: var(--space-2xl);
+}
+
+.skillCat-card {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+  padding: var(--space-lg);
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  width: 12rem;
+}
+
+.skillCat-card ul {
+  display: grid;
+  gap: var(--space-xs);
+}

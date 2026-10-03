@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import projects from "../../../data/projects"
 import ProjectCard from '../../organisms/ProjectCard'
+import './Projects.css'
 
 function Projects() {
 
@@ -20,21 +21,23 @@ function Projects() {
 
     return (
         <section id="projects">
-            <h2>Mes Projets</h2>
-            <div>
-                {filters.map((filter) => (
-                    <button
-                        key={filter.id}
-                        type="button"
-                        onClick={() => setActiveFilter(filter.id)}
-                        aria-pressed={activeFilter === filter.id}
-                    >
-                        {filter.label}
-                    </button>
-                ))}
+            <div className='projects-header'>
+                <h2>Mes Projets</h2>
+                <div className='projects-sort-buttons'>
+                    {filters.map((filter) => (
+                        <button
+                            key={filter.id}
+                            type="button"
+                            onClick={() => setActiveFilter(filter.id)}
+                            aria-pressed={activeFilter === filter.id}
+                        >
+                            {filter.label}
+                        </button>
+                    ))}
+                </div>
             </div>
 
-            <div>
+            <div className='projects-cards'>
                 {visibleProjects.map((project) => (
                     <ProjectCard
                         key={project.id}

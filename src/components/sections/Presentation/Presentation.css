@@ -1,0 +1,15 @@
+#presentation {
+  display: grid;
+  gap: var(--space-md);
+}
+
+#presentation p {
+  max-width: 45rem;
+}
+
+@media (min-width: 48em) {
+  #presentation {
+    grid-template-columns: 1fr 2fr;
+    gap: var(--space-xl);
+  }
+}

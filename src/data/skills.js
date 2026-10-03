@@ -21,7 +21,7 @@ const skills = [
   },
   {
     id: "en-cours",
-    title: "En cours d'apprentissage",
+    title: "En cours",
     items: ["React", "Symfony"],
   },
 ];
