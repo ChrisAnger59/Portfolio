@@ -1,9 +1,10 @@
 import ProfilePicture from "../../../assets/photoProfil_CV_Linkedin.png"
+import './Header.css'
 
 function Header() {
     return (
         <header>
-            <div>
+            <div className="header-presentation">
                 <img src={ProfilePicture} alt="Christophe Anger" />
                 <p>Christophe Anger</p>
             </div>
@@ -16,10 +17,11 @@ function Header() {
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
-        
-            <button type="button" aria-label="Passer en anglais">FR / EN</button>
-        
-            <button type="button" aria-label="activer le thème sombre">logoLune</button>
+
+            <div className="header-buttons">
+                <button type="button" aria-label="Passer en anglais">FR / EN</button>
+                <button type="button" aria-label="activer le thème sombre">logoLune</button>
+            </div>
         </header>
     )
 }

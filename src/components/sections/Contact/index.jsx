@@ -1,10 +1,10 @@
-
+import './Contact.css'
 
 function Contact() {
     return (
         <section id="contact">
             <h2>Mes Contacts</h2>
-            <div>
+            <div className='contact-info'>
                 <p>
                     Une alternance à me proposer ?
                     Ou simplement une question sur un de mes projets ?

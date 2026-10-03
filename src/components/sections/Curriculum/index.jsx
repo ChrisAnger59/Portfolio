@@ -1,17 +1,19 @@
-
+import './Curriculum.css'
 
 function Curriculum() {
     return (
         <section id="curriculum">
-            <p>Disponible en janvier 2027</p>
-            <h1>Développeur full stack, en recherche d'alternance</h1>
-            <p>
-                Je construis des applications web: PHP orienté objet côté serveur, du Javascript et du React côté interface.
-                Je recherche une alternance de 12 mois dans la métropole Lilloise.
-            </p>
-            <a href="/CV_alternance.pdf">Télécharger mon CV</a>
+            <div className="curriculum-presentation">
+                <p>Disponible en janvier 2027</p>
+                <h1>Développeur full stack, en recherche d'alternance</h1>
+                <p>
+                    Je construis des applications web: PHP orienté objet côté serveur, du Javascript et du React côté interface.
+                    Je recherche une alternance de 12 mois dans la métropole Lilloise.
+                </p>
+                <a href="/CV_alternance.pdf">Télécharger mon CV</a>
+            </div>
 
-            <div>
+            <div className="curriculum-details">
                 <h2>En bref</h2>
                 <div>
                     <h3>Diplôme</h3>

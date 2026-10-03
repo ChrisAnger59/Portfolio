@@ -27,7 +27,7 @@ const projects = [
     categories: ["cadrage"],
     tech: ["Cadrage", "UML", "Figma", "Kanban"],
     link: "https://github.com/ChrisAnger59/Learn-Home",
-    linkLabel: "Documents du cadrage de Learn@Home sur GitHub",
+    linkLabel: "Documents de Learn@Home sur GitHub",
   },
 ];
 
