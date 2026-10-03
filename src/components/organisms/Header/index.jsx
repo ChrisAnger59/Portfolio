@@ -1,7 +1,10 @@
 import ProfilePicture from "../../../assets/photoProfil_CV_Linkedin.png"
+import ThemeToggle from "../../molecules/ThemeToggle"
 import './Header.css'
 
 function Header() {
+
+    const check = window.matchMedia('(prefers-color-scheme: dark)').matches
     return (
         <header>
             <div className="header-presentation">
@@ -20,7 +23,8 @@ function Header() {
 
             <div className="header-buttons">
                 <button type="button" aria-label="Passer en anglais">FR / EN</button>
-                <button type="button" aria-label="activer le thème sombre">logoLune</button>
+                
+                <ThemeToggle />
             </div>
         </header>
     )
