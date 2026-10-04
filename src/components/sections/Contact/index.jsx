@@ -1,18 +1,15 @@
+import content from "../../../data/content"
 import './Contact.css'
 
 function Contact() {
     return (
         <section id="contact">
-            <h2>Mes Contacts</h2>
+            <h2>{content.contact.title.fr}</h2>
             <div className='contact-info'>
-                <p>
-                    Une alternance à me proposer ?
-                    Ou simplement une question sur un de mes projets ?
-                    Contactez-moi, je réponds rapidement !
-                </p>
+                <p>{content.contact.paragraph.fr}</p>
                 <a href="mailto:christophe.anger.pro@gmail.com">christophe.anger.pro@gmail.com</a>
-                <a href="https://github.com/ChrisAnger59/">Mon GitHub</a>
-                <a href="https://www.linkedin.com/in/christophe-anger/">Mon LinkedIn</a>
+                <a href="https://github.com/ChrisAnger59/">{content.contact.github.fr}</a>
+                <a href="https://www.linkedin.com/in/christophe-anger/">{content.contact.linkedin.fr}</a>
             </div>
         </section>
     )

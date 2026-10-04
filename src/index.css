@@ -49,7 +49,7 @@ picture {
   --content-width: 70rem;
 
   /* Suit le système ; data-theme force un thème (bouton) */
-  color-scheme: light dark;
+  color-scheme: light;
 }
 
 :root[data-theme='light'] { color-scheme: light; }

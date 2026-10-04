@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import projects from "../../../data/projects"
 import ProjectCard from '../../organisms/ProjectCard'
+import content from '../../../data/content'
 import './Projects.css'
 
 function Projects() {
@@ -8,10 +9,10 @@ function Projects() {
     const [activeFilter, setActiveFilter] = useState("tous")
 
     const filters = [
-        { id: "tous", label: "Tous"},
-        { id: "react", label: "React"},
-        { id: "php", label: "PHP"},
-        { id: "cadrage", label: "Cadrage"}
+        { id: "tous", label: content.projects.filterAll.fr},
+        { id: "react", label: content.projects.filterReact.fr},
+        { id: "php", label: content.projects.filterPhp.fr},
+        { id: "cadrage", label: content.projects.filterScoping.fr}
     ]
 
     const visibleProjects = 
@@ -22,7 +23,7 @@ function Projects() {
     return (
         <section id="projects">
             <div className='projects-header'>
-                <h2>Mes Projets</h2>
+                <h2>{content.projects.title.fr}</h2>
                 <div className='projects-sort-buttons'>
                     {filters.map((filter) => (
                         <button
@@ -42,10 +43,10 @@ function Projects() {
                     <ProjectCard
                         key={project.id}
                         title={project.title}
-                        description={project.description}
+                        description={project.description.fr}
                         tech={project.tech}
                         link={project.link}
-                        linkLabel={project.linkLabel}
+                        linkLabel={project.linkLabel.fr}
                     />
                 ))}
             </div>
