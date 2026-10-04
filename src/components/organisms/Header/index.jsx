@@ -1,5 +1,6 @@
 import ProfilePicture from "../../../assets/photoProfil_CV_Linkedin.png"
 import ThemeToggle from "../../molecules/ThemeToggle"
+import content from '../../../data/content'
 import './Header.css'
 
 function Header() {
@@ -14,17 +15,18 @@ function Header() {
         
             <nav>
                 <ul>
-                    <li><a href="#presentation">Présentation</a></li>
-                    <li><a href="#projects">Projets</a></li>
-                    <li><a href="#skills">Compétences</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#presentation">{content.nav.about.fr}</a></li>
+                    <li><a href="#projects">{content.nav.projects.fr}</a></li>
+                    <li><a href="#skills">{content.nav.skills.fr}</a></li>
+                    <li><a href="#contact">{content.nav.contact.fr}</a></li>
                 </ul>
             </nav>
 
             <div className="header-buttons">
                 <button type="button" aria-label="Passer en anglais">FR / EN</button>
                 
-                <ThemeToggle />
+                {/* Switch beetween french and english, incoming */}
+                {/* <ThemeToggle /> */}
             </div>
         </header>
     )

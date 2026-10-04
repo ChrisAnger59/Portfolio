@@ -1,38 +1,36 @@
+import content from '../../../data/content'
 import './Curriculum.css'
 
 function Curriculum() {
     return (
         <section id="curriculum">
             <div className="curriculum-presentation">
-                <p>Disponible en janvier 2027</p>
-                <h1>Développeur full stack, en recherche d'alternance</h1>
-                <p>
-                    Je construis des applications web: PHP orienté objet côté serveur, du Javascript et du React côté interface.
-                    Je recherche une alternance de 12 mois dans la métropole Lilloise.
-                </p>
-                <a href="/CV_alternance.pdf">Télécharger mon CV</a>
+                <p>{content.hero.availability.fr}</p>
+                <h1>{content.hero.title.fr}</h1>
+                <p>{content.hero.intro.fr}</p>
+                <a href="/CV_alternance.pdf">{content.hero.cvLink.fr}</a>
             </div>
 
             <div className="curriculum-details">
-                <h2>En bref</h2>
+                <h2>{content.hero.briefTitle.fr}</h2>
                 <div>
-                    <h3>Diplôme</h3>
-                    <p>Développeur Full Stack</p>
+                    <h3>{content.hero.degreeLabel.fr}</h3>
+                    <p>{content.hero.degreeValue.fr}</p>
                 </div>
 
                 <div>
-                    <h3>Objectif</h3>
-                    <p>Lead Developer Javascript</p>
+                    <h3>{content.hero.goalLabel.fr}</h3>
+                    <p>{content.hero.goalValue.fr}</p>
                 </div>
 
                 <div>
-                    <h3>Rythme</h3>
-                    <p>4 jours / 1 jour</p>
+                    <h3>{content.hero.paceLabel.fr}</h3>
+                    <p>{content.hero.paceValue.fr}</p>
                 </div>
 
                 <div>
-                    <h3>Lieu</h3>
-                    <p>Métropole Lilloise</p>
+                    <h3>{content.hero.locationLabel.fr}</h3>
+                    <p>{content.hero.locationValue.fr}</p>
                 </div>
             </div>
         </section>
