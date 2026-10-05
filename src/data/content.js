@@ -8,7 +8,7 @@ const content = {
 
     hero: {
         availability: {
-            fr: "Disponnible en janvier 2027",
+            fr: "Disponible en janvier 2027",
             en: "Available from January 2027"
         },
 
