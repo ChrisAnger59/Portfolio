@@ -1,5 +1,3 @@
-
-
 function ProjectCard({ title, description, tech, link, linkLabel, className='' }) {
     return (
         <article className={`project-card ${className}`.trim()}>
