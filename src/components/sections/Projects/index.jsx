@@ -2,17 +2,20 @@ import { useState } from 'react'
 import projects from "../../../data/projects"
 import ProjectCard from '../../organisms/ProjectCard'
 import content from '../../../data/content'
+import { useLanguage } from "../../../contexts/LanguageContext/LanguageContext"
 import './Projects.css'
 
 function Projects() {
 
+    const { language } = useLanguage()
+
     const [activeFilter, setActiveFilter] = useState("tous")
 
     const filters = [
-        { id: "tous", label: content.projects.filterAll.fr},
-        { id: "react", label: content.projects.filterReact.fr},
-        { id: "php", label: content.projects.filterPhp.fr},
-        { id: "cadrage", label: content.projects.filterScoping.fr}
+        { id: "tous", label: content.projects.filterAll[language]},
+        { id: "react", label: content.projects.filterReact[language]},
+        { id: "php", label: content.projects.filterPhp[language]},
+        { id: "cadrage", label: content.projects.filterScoping[language]}
     ]
 
     const visibleProjects = 
@@ -23,7 +26,7 @@ function Projects() {
     return (
         <section id="projects">
             <div className='projects-header'>
-                <h2>{content.projects.title.fr}</h2>
+                <h2>{content.projects.title[language]}</h2>
                 <div className='projects-sort-buttons'>
                     {filters.map((filter) => (
                         <button
@@ -43,10 +46,10 @@ function Projects() {
                     <ProjectCard
                         key={project.id}
                         title={project.title}
-                        description={project.description.fr}
+                        description={project.description[language]}
                         tech={project.tech}
                         link={project.link}
-                        linkLabel={project.linkLabel.fr}
+                        linkLabel={project.linkLabel[language]}
                     />
                 ))}
             </div>
