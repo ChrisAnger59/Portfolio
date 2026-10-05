@@ -44,6 +44,7 @@
 .project-card a {
   margin-top: auto;
   font-weight: 350;
+  font-size: smaller;
 }
 
 .project-card ul {

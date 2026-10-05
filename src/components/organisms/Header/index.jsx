@@ -23,10 +23,10 @@ function Header() {
             </nav>
 
             <div className="header-buttons">
-                <button type="button" aria-label="Passer en anglais">FR / EN</button>
-                
                 {/* Switch beetween french and english, incoming */}
-                {/* <ThemeToggle /> */}
+                {/* <button type="button" aria-label="Passer en anglais">FR / EN</button> */}
+                
+                <ThemeToggle />
             </div>
         </header>
     )
