@@ -6,5 +6,9 @@ main {
 
 /* Évite que les ancres passent sous l'en-tête collant */
 section {
-  scroll-margin-top: 6rem;
+  scroll-margin-top: 9rem;
+}
+
+@media (min-width: 48em) {
+  section { scroll-margin-top: 8rem; }
 }
